@@ -3,6 +3,9 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+//Serving static files in Express
+app.use(express.static("public"));
+
 //Testing express server
 app.get("/", (req, res) => {
   res.send(`Server is online`);
