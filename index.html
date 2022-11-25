@@ -14,15 +14,46 @@
     <!-- <link rel="stylesheet" href="/css/style.css" /> -->
   </head>
   <body>
-    <div class="modal-container">
-      <span class="material-symbols-outlined"> close </span>
-      <div class="options">
-        <div class="optionBox urlSection">
-          <button>Import from url</button>
+    <nav class="flex fixed w-full bg-white h-16 shadow-sm justify-between z-20">
+      <div class="brand flex justify-center items-center ml-6">
+        <img class="block h-6 mr-6" src="/img/SPLASHED.svg" alt="" />
+        <div class="w-96 text-sm">
+          <span class="font-bold">Advertise on Splashed</span>
+          <span class="text-gray-400"
+            >Promote your brand to passionate creative professionals all over
+            the world.</span
+          >
+          <span class="text-blue-600"><a href="">Try Now.</a></span>
         </div>
-        <div class="optionBox uploadSection">
-          <button>Upload an image</button>
-        </div>
+      </div>
+      <div class="menu flex justify-center items-center mr-6">
+        <ul class="flex space-x-4 font-medium h-full items-center">
+          <li><a href="">Tools</a></li>
+          <li><a href="">Jobs</a></li>
+          <li><a href="">Pro</a></li>
+          <li>
+            <a href="" class="inline-block border-l ml-4 w-20 text-center"
+              >Sign in</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="bg-blue-600 text-white rounded-md inline-block h-10 w-24 text-center pt-2"
+              >Sign Up</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div
+      class="modal-container absolute top-2/4 left-2/4 bg-white flex p-6 rounded-2xl shadow-lg w-100 mx-auto gap-4 h-96 -translate-x-2/4 -translate-y-2/4 z-10"
+    >
+      <div class="optionBox urlSection rounded-xl">
+        <button>Import from url</button>
+      </div>
+      <div class="optionBox uploadSection">
+        <button>Upload an image</button>
       </div>
     </div>
   </body>

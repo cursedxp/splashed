@@ -1,4 +1,4 @@
 import Canvas from "/Canvas.js";
 
-const canvas = new Canvas(300, 300);
+const canvas = new Canvas();
 console.log(canvas);

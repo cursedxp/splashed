@@ -1,9 +1,8 @@
 export default class Canvas {
-  constructor(width, height, color) {
+  constructor(width, height) {
     this.properties = {
       width: width,
       height: height,
-      color: color,
     };
     this.createCanvas(this.properties.width, this.properties.height);
   }
@@ -27,7 +26,7 @@ export default class Canvas {
   //style canvas bg to grey or custom color
   styleCanvas(canvas, width, height) {
     const canvasContext = canvas.getContext("2d");
-    canvasContext.fillStyle = "lightgrey";
+    canvasContext.fillStyle = "rgb(242, 242, 242)";
     canvasContext.fillRect(0, 0, width, height);
   }
 }
