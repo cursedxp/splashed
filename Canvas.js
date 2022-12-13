@@ -4,22 +4,20 @@ export default class Canvas {
       width: width,
       height: height,
     };
-    this.createCanvas(this.properties.width, this.properties.height);
   }
 
-  //Creates canvas based on width and heigh
-  createCanvas(width, height) {
+  //Creates canvas
+  createCanvas() {
     const canvas = document.createElement("canvas");
-
-    if (!width && !height) {
-      canvas.width = document.documentElement.clientWidth;
-      canvas.height = document.documentElement.clientHeight;
-    } else {
-      canvas.width = width;
-      canvas.height = height;
-    }
     document.body.appendChild(canvas);
 
+    this.resizeCanvas();
+  }
+  //Resizes the canvas based on browser size
+  resizeCanvas() {
+    const canvas = document.querySelector("canvas");
+    canvas.width = document.documentElement.clientWidth;
+    canvas.height = document.documentElement.clientHeight;
     this.styleCanvas(canvas, canvas.width, canvas.height);
   }
 
