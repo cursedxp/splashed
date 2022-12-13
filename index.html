@@ -51,7 +51,7 @@
       class="modal-container absolute top-2/4 left-2/4 bg-white flex rounded-2xl shadow-lg w-100 h-96 -translate-x-2/4 -translate-y-2/4 z-10"
     >
       <!-- Model content -1 -->
-      <div class="flex gap-4 hidden">
+      <div class="welcome flex gap-4 hidden">
         <img
           src="/img/lidya-nada-tXz6g8JYYoI-unsplash.jpg"
           class="h-96 block rounded-l-2xl"
@@ -70,6 +70,7 @@
             every purchase.
           </p>
           <button
+            id="startButton"
             class="bg-blue-600 text-white rounded-md inline-block h-10 w-24 text-center"
           >
             Start Now
@@ -78,7 +79,7 @@
       </div>
       <!-- Model content -1 -->
       <!-- Model content -2 -->
-      <div class="flex flex-col">
+      <div class="options flex flex-col">
         <div class="flex justify-end p-4 pb-2">
           <a href="" class="bg-gray-100 rounded-md p-2 flex justify-end">
             <svg
@@ -99,9 +100,9 @@
         </div>
         <div class="flex gap-4">
           <!-- Import from Url -->
-          <div class="h-full w-1/2 rounded-l-2xl px-6 flex flex-col">
+          <div class="h-full w-1/2 rounded-l-2xl px-8 flex flex-col">
             <div
-              class="p-2 inline-flex items-center justify-center w-12 h-12 rounded-md shadow-lg mb-4"
+              class="p-2 inline-flex items-center justify-center w-12 h-12 rounded-md shadow-lg mb-8"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -121,22 +122,21 @@
             <h3 class="text-base font-medium tracking-tight">
               Import from URL
             </h3>
-            <p class="mb-4 text-slate-500 dark:text-slate-400 mt-2 text-sm">
+            <p class="mb-8 text-slate-500 dark:text-slate-400 mt-2 text-sm">
               Crop images from variety of sources such as website or social
               media platforms. Resize them to fit your needs.
             </p>
-            <a
-              href="#"
-              class="bg-blue-600 text-white rounded-md inline-block h-10 text-center w-32 p-2 px-4"
+            <button
+              class="bg-blue-600 text-white rounded-md inline-block h-10 text-center p-2 px-4"
             >
               Import URL
-            </a>
+            </button>
           </div>
           <!-- Import from Url -->
           <!-- Import from File -->
-          <div class="h-full w-1/2 rounded-l-2xl px-6 flex flex-col">
+          <div class="h-full w-1/2 rounded-l-2xl px-8 flex flex-col">
             <div
-              class="p-2 inline-flex items-center justify-center w-12 h-12 rounded-md shadow-lg mb-4"
+              class="p-2 inline-flex items-center justify-center w-12 h-12 rounded-md shadow-lg mb-8"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -156,16 +156,15 @@
             <h3 class="text-base font-medium tracking-tight">
               Import from File
             </h3>
-            <p class="mb-4 text-slate-500 dark:text-slate-400 mt-2 text-sm">
+            <p class="mb-8 text-slate-500 dark:text-slate-400 mt-2 text-sm">
               Crop images from your local image files with ease. You can even
               export them to your desired output, such as JPEG or PNG.
             </p>
-            <a
-              href="#"
-              class="bg-blue-600 text-white rounded-md inline-block h-10 text-center w-32 p-2 px-4"
+            <button
+              class="bg-blue-600 text-white rounded-md inline-block h-10 text-center p-2 px-4"
             >
               Choose File
-            </a>
+            </button>
           </div>
           <!-- Import from File -->
         </div>
