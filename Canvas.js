@@ -10,14 +10,15 @@ export default class Canvas {
   createCanvas() {
     const canvas = document.createElement("canvas");
     document.body.appendChild(canvas);
+
     this.resizeCanvas();
-    this.styleCanvas(canvas, canvas.width, canvas.height);
   }
   //Resizes the canvas based on browser size
   resizeCanvas() {
     const canvas = document.querySelector("canvas");
     canvas.width = document.documentElement.clientWidth;
     canvas.height = document.documentElement.clientHeight;
+    this.styleCanvas(canvas, canvas.width, canvas.height);
   }
 
   //style canvas bg to grey or custom color
