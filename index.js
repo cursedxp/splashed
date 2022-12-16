@@ -3,11 +3,29 @@ import Canvas from "/Canvas.js";
 const canvas = new Canvas();
 canvas.createCanvas();
 
+let sectionIsHidden = false;
+const section = document.querySelectorAll(".section");
 const startButton = document.querySelector("#startButton");
-startButton.addEventListener("onclick", (e) => {});
+const backButton = document.querySelector("#backButton");
 
-const welcomeSlide = document.querySelector(".welcome");
-const optionsSlide = document.querySelector(".options");
+startButton.addEventListener("click", (e) => {
+  let sectionIsHidden = true;
+  sectionVisibility(sectionIsHidden);
+});
+backButton.addEventListener("click", (e) => {
+  let sectionIsHidden = false;
+  sectionVisibility(sectionIsHidden);
+});
+
+const sectionVisibility = function (status) {
+  if (status == true) {
+    section[0].classList.add("hidden");
+    section[1].classList.remove("hidden");
+  } else {
+    section[1].classList.add("hidden");
+    section[0].classList.remove("hidden");
+  }
+};
 
 window.addEventListener("resize", () => {
   canvas.resizeCanvas();

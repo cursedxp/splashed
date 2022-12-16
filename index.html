@@ -51,13 +51,12 @@
       class="modal-container absolute top-2/4 left-2/4 bg-white flex rounded-2xl shadow-lg w-100 h-96 -translate-x-2/4 -translate-y-2/4 z-10"
     >
       <!-- Model content -1 -->
-      <div class="welcome flex gap-4 hidden">
+      <div class="section flex gap-4">
         <img
           src="/img/lidya-nada-tXz6g8JYYoI-unsplash.jpg"
           class="h-96 block rounded-l-2xl"
           alt=""
         />
-
         <div
           class="optionBox w-1/2 flex flex-col justify-center items-center gap-4 p-4 mr-4"
         >
@@ -71,17 +70,20 @@
           </p>
           <button
             id="startButton"
-            class="bg-blue-600 text-white rounded-md inline-block h-10 w-24 text-center"
+            class="bg-blue-600 text-white rounded-md inline-block h-10 w-24 text-center transform hover:bg-pink-500 hover:drop-shadow-lg transition ease-in-out duration-500"
           >
             Start Now
           </button>
         </div>
       </div>
-      <!-- Model content -1 -->
       <!-- Model content -2 -->
-      <div class="options flex flex-col">
-        <div class="flex justify-end p-4 pb-2">
-          <a href="" class="bg-gray-100 rounded-md p-2 flex justify-end">
+      <div class="section flex flex-col hidden">
+        <div class="flex justify-end p-4 pb-2 cursor-pointer">
+          <button
+            id="backButton"
+            href=""
+            class="bg-gray-100 rounded-md p-2 flex justify-end"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -96,7 +98,7 @@
                 d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75"
               />
             </svg>
-          </a>
+          </button>
         </div>
         <div class="flex gap-4">
           <!-- Import from Url -->
@@ -127,7 +129,7 @@
               media platforms. Resize them to fit your needs.
             </p>
             <button
-              class="bg-blue-600 text-white rounded-md inline-block h-10 text-center p-2 px-4"
+              class="bg-blue-600 text-white rounded-md inline-block h-10 text-center p-2 px-4 transform hover:bg-pink-500 hover:shadow-lg transition ease-in-out duration-500"
             >
               Import URL
             </button>
@@ -161,7 +163,7 @@
               export them to your desired output, such as JPEG or PNG.
             </p>
             <button
-              class="bg-blue-600 text-white rounded-md inline-block h-10 text-center p-2 px-4"
+              class="bg-blue-600 text-white rounded-md inline-block h-10 text-center p-2 px-4 transform hover:bg-pink-500 hover:drop-shadow-lg transition ease-in-out duration-500"
             >
               Choose File
             </button>
@@ -169,8 +171,6 @@
           <!-- Import from File -->
         </div>
       </div>
-
-      <!-- Model content -2 -->
     </div>
   </body>
 </html>
