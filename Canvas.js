@@ -24,8 +24,21 @@ export default class Canvas {
   addImage(url, file) {
     let image = new Image();
     image.src = url;
+    let width = image.width * 0.5;
+    let height = image.height * 0.5;
     image.onload = () => {
-      this.canvasContext.drawImage(image, 0, 0);
+      //Add shadow to the background of image
+      this.canvasContext.shadowColor = "rgba(0, 0, 0, 0.3)";
+      this.canvasContext.shadowBlur = 20;
+      this.canvasContext.shadowOffsetX = 2.5;
+      this.canvasContext.shadowOffsetY = 2.5;
+      this.canvasContext.drawImage(
+        image,
+        this.canvas.width / 2 - (image.width * 0.5) / 2,
+        this.canvas.height / 2 - (image.width * 0.5) / 2,
+        image.width * 0.5,
+        image.height * 0.5
+      );
     };
   }
 }
