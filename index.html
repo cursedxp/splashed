@@ -46,6 +46,32 @@
         </ul>
       </div>
     </nav>
+
+    <!-- URL Import Field -->
+    <div
+      class="importUrl-container absolute top-32 left-2/4 bg-white flex rounded-2xl shadow-lg w-100 -translate-x-2/4 z-10 hidden"
+    >
+      <form action="" class="w-full">
+        <div class="m-4 flex rounded-md shadow-sm">
+          <span
+            class="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-3 text-sm text-gray-500"
+            >http://</span
+          >
+          <input
+            type="text"
+            id="urlField"
+            class="block w-full flex-1 rounded-none rounded-r-md border-gray-300 focus:border-pink-500 focus:ring-pink-500 sm:text-sm mr-4"
+            placeholder="www.example.com"
+          />
+          <button
+            id="import"
+            class="bg-blue-600 text-white rounded-md inline-block h-10 text-center p-2 px-4 transform hover:bg-pink-500 hover:shadow-lg transition ease-in-out duration-500"
+          >
+            Import
+          </button>
+        </div>
+      </form>
+    </div>
     <!-- Modal -->
     <div
       class="modal-container absolute top-2/4 left-2/4 bg-white flex rounded-2xl shadow-lg w-100 h-96 -translate-x-2/4 -translate-y-2/4 z-10"
@@ -129,6 +155,7 @@
               media platforms. Resize them to fit your needs.
             </p>
             <button
+              id="importUrl"
               class="bg-blue-600 text-white rounded-md inline-block h-10 text-center p-2 px-4 transform hover:bg-pink-500 hover:shadow-lg transition ease-in-out duration-500"
             >
               Import URL
