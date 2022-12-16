@@ -4,6 +4,7 @@ export default class Canvas {
     const canvas = document.createElement("canvas");
     document.body.appendChild(canvas);
     this.canvasContext = canvas.getContext("2d");
+    this.canvas = canvas;
     this.resizeCanvas();
   }
   //Resizes the canvas based on browser size
@@ -19,8 +20,9 @@ export default class Canvas {
     this.canvasContext.fillStyle = "rgb(242, 242, 242)";
     this.canvasContext.fillRect(0, 0, width, height);
   }
+  //Add an image to canvas
   addImage(url, file) {
-    let image = Image();
+    let image = new Image();
     image.src = url;
     image.onload = () => {
       this.canvasContext.drawImage(image, 0, 0);
